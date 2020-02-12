@@ -381,8 +381,7 @@ h6 > a.self-link::before {
       }
     </script>
   <meta name="description" content="The MathML Accessibility API Mappings (MathML-AAM) specification defines how user agents
-	map Mathematical Markup Language (MathML) [MathML3] to platform accessiblity application
-	programming interfaces (APIs). It
+	map Mathematical Markup Language (MathML) [MathML3] to platform accessiblity APIs. It
 	extends the Core Accessibility API Mappings (CORE-AAM) specification [CORE-AAM-1.2]."><link rel="canonical" href="https://www.w3.org/TR/mathml-aam-1.0/"><style>var {
   position: relative;
   cursor: pointer;
@@ -574,8 +573,7 @@ var[data-type]:hover::before {
     <section id="abstract" class="introductory"><h2>Abstract</h2>
       <p>
 	The MathML Accessibility <abbr title="application programming interface">API</abbr> Mappings (MathML-AAM) specification defines how <a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agents</a>
-	map Mathematical Markup Language (MathML) [<cite><a class="bibref" data-link-type="biblio" href="#bib-mathml3" title="Mathematical Markup Language (MathML) Version 3.0 2nd Edition">MathML3</a></cite>] to platform <a class="respec-offending-element" title="Error: No matching dfn found." id="respec-offender-error-no-matching-dfn-found">accessiblity application
-	programming interfaces (<abbr title="Application Programming Interfaces">APIs</abbr>)</a>. It
+	map Mathematical Markup Language (MathML) [<cite><a class="bibref" data-link-type="biblio" href="#bib-mathml3" title="Mathematical Markup Language (MathML) Version 3.0 2nd Edition">MathML3</a></cite>] to platform <a class="respec-offending-element" title="Error: No matching dfn found." id="respec-offender-error-no-matching-dfn-found">accessiblity APIs</a>. It
 	extends the Core Accessibility <abbr title="application programming interface">API</abbr> Mappings (CORE-AAM) specification [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam-1.2" title="Core Accessibility API Mappings 1.2">CORE-AAM-1.2</a></cite>].
       </p>
       <p>
@@ -588,8 +586,7 @@ var[data-type]:hover::before {
 	At the present time, this specification contains mappings for the subset of MathML contained
 	in the MathML Core specification [<cite><a class="bibref" data-link-type="biblio" href="#bib-mathml-core" title="MathML Core">MathML-Core</a></cite>]. The reason why is that this subset contains
 	the <a href="#dfn-element" class="internalDFN" data-link-type="dfn">elements</a> and <a href="#dfn-attribute" class="internalDFN" data-link-type="dfn">attributes</a> from MathML which are exposed to <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive
-	technologies</a> via platform <a class="respec-offending-element" title="Error: No matching dfn found." id="respec-offender-error-no-matching-dfn-found-0">accessiblity application programming interfaces
-	(<abbr title="Application Programming Interfaces">APIs</abbr>)</a>.
+	technologies</a> via platform <a class="respec-offending-element" title="Error: No matching dfn found." id="respec-offender-error-no-matching-dfn-found-0">accessiblity APIs</a>.
       </p>
       <p>
 	The MathML-AAM is part of the <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr>
@@ -645,7 +642,7 @@ var[data-type]:hover::before {
     </p><p>
                   This document is governed by the
                   <a id="w3c_process_revision" href="https://www.w3.org/2019/Process-20190301/">1 March 2019 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#deprecated"><bdi class="secno">2.1 </bdi>Deprecated</a></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">3. </bdi>Important Terms</a></li><li class="tocline"><a class="tocxref" href="#mapping-mathml-to-accessibility-apis"><bdi class="secno">4. </bdi>Mapping MathML to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_general"><bdi class="secno">4.1 </bdi>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a></li><li class="tocline"><a class="tocxref" href="#mapping_conflicts"><bdi class="secno">4.2 </bdi>Conflicts between native semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a class="tocxref" href="#mapping_nodirect"><bdi class="secno">4.3 </bdi>Exposing features that do not directly map to accessibility <abbr title="application programming interface">API</abbr></a></li><li class="tocline"><a class="tocxref" href="#mathml-element-mappings"><bdi class="secno">4.4 </bdi>MathML Element Mappings</a></li><li class="tocline"><a class="tocxref" href="#mathml-attribute-mappings"><bdi class="secno">4.5 </bdi>MathML Attribute Mappings</a></li><li class="tocline"><a class="tocxref" href="#changelog"><bdi class="secno">4.6 </bdi>Change Log</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-last-public-working-draft"><bdi class="secno">4.6.1 </bdi>Substantive changes since the last public working draft</a></li><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-creation-of-this-specification"><bdi class="secno">4.6.2 </bdi>Substantive changes since the creation of this specification</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">A.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.2 </bdi>Informative references</a></li></ol></li></ol></nav>
+                </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#deprecated"><bdi class="secno">2.1 </bdi>Deprecated</a></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">3. </bdi>Important Terms</a></li><li class="tocline"><a class="tocxref" href="#mapping-mathml-to-accessibility-apis"><bdi class="secno">4. </bdi>Mapping MathML to Accessibility APIs</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_general"><bdi class="secno">4.1 </bdi>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a></li><li class="tocline"><a class="tocxref" href="#mapping_conflicts"><bdi class="secno">4.2 </bdi>Conflicts between native semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a class="tocxref" href="#mapping_nodirect"><bdi class="secno">4.3 </bdi>Exposing features that do not directly map to accessibility <abbr title="application programming interface">API</abbr></a></li><li class="tocline"><a class="tocxref" href="#mathml-element-mappings"><bdi class="secno">4.4 </bdi>MathML Element Mappings</a></li><li class="tocline"><a class="tocxref" href="#mathml-attribute-mappings"><bdi class="secno">4.5 </bdi>MathML Attribute Mappings</a></li><li class="tocline"><a class="tocxref" href="#changelog"><bdi class="secno">4.6 </bdi>Change Log</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-last-public-working-draft"><bdi class="secno">4.6.1 </bdi>Substantive changes since the last public working draft</a></li><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-creation-of-this-specification"><bdi class="secno">4.6.2 </bdi>Substantive changes since the creation of this specification</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">A.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.2 </bdi>Informative references</a></li></ol></li></ol></nav>
 
     <section id="introduction">
       <h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction<a class="self-link" aria-label="§" href="#introduction"></a></h2>
@@ -690,7 +687,7 @@ var[data-type]:hover::before {
 <dl class="termlist">
     <dt><dfn data-lt="accessibility api|accessibility apis|Accessibility API" data-dfn-type="dfn" id="dfn-accessibility-api">Accessibility <abbr title="Application Programming Interface">API</abbr></dfn></dt>
     <dd>
-      <p>Operating systems and other platforms provide a set of interfaces that expose information about <a class="termref internalDFN" data-lt="object" href="#dfn-object" data-link-type="dfn">objects</a> and <a class="termref internalDFN" data-lt="event" href="#dfn-event" data-link-type="dfn">events</a> to <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>. Assistive technologies use these interfaces to get information about and interact with those <a class="termref internalDFN" data-lt="widget" href="#dfn-widget" data-link-type="dfn">widgets</a>. Examples of accessibility <abbr title="Application Programming Interfaces">APIs</abbr> are <a href="https://msdn.microsoft.com/en-us/library/ms697270(VS.85).aspx">Microsoft Active Accessibility</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-msaa" title="Microsoft Active Accessibility (MSAA) 2.0">MSAA</a></cite>], <a href="https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx">Microsoft User Interface Automation</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-ui-automation" title="UI Automation">UI-AUTOMATION</a></cite>], <abbr title="Microsoft Active Accessibility">MSAA</abbr> with <cite><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898(v=vs.85).aspx"><abbr title="User Interface Automation">UIA</abbr> Express</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-uia-express" title="The IAccessibleEx Interface">UIA-EXPRESS</a></cite>], the
+      <p>Operating systems and other platforms provide a set of interfaces that expose information about <a class="termref internalDFN" data-lt="object" href="#dfn-object" data-link-type="dfn">objects</a> and <a class="termref internalDFN" data-lt="event" href="#dfn-event" data-link-type="dfn">events</a> to <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>. Assistive technologies use these interfaces to get information about and interact with those <a class="termref internalDFN" data-lt="widget" href="#dfn-widget" data-link-type="dfn">widgets</a>. Examples of accessibility APIs are <a href="https://msdn.microsoft.com/en-us/library/ms697270(VS.85).aspx">Microsoft Active Accessibility</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-msaa" title="Microsoft Active Accessibility (MSAA) 2.0">MSAA</a></cite>], <a href="https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx">Microsoft User Interface Automation</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-ui-automation" title="UI Automation">UI-AUTOMATION</a></cite>], <abbr title="Microsoft Active Accessibility">MSAA</abbr> with <cite><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898(v=vs.85).aspx"><abbr title="User Interface Automation">UIA</abbr> Express</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-uia-express" title="The IAccessibleEx Interface">UIA-EXPRESS</a></cite>], the
       	<a href="https://developer.apple.com/documentation/appkit/accessibility/nsaccessibility">Mac <abbr title="OS Ten">OS X</abbr> Accessibility Protocol</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-axapi" title="The NSAccessibility Protocol for macOS">AXAPI</a></cite>], the <cite><a href="https://developer.gnome.org/atk/unstable/">Linux/Unix Accessibility Toolkit</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-atk" title="ATK - Accessibility Toolkit">ATK</a></cite>] and <cite><a href="https://developer.gnome.org/libatspi/stable/">Assistive Technology Service Provider Interface</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-at-spi" title="Assistive Technology Service Provider Interface">AT-SPI</a></cite>], and <a href="https://wiki.linuxfoundation.org/accessibility/iaccessible2/start">IAccessible2</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-iaccessible2" title="IAccessible2">IAccessible2</a></cite>].</p>
     </dd>
     <dt><dfn data-dfn-type="dfn" id="dfn-accessibility-subtree">Accessibility Subtree</dfn></dt>
@@ -722,7 +719,7 @@ var[data-type]:hover::before {
     <dd><p>Hardware and/or software that:</p>
 			<ul>
 				<li>relies on services provided by a <a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agent</a> to retrieve and render Web content </li>
-				<li>works with a user agent or web content itself through the use of <abbr title="Application Programming Interfaces">APIs</abbr>, and</li>
+				<li>works with a user agent or web content itself through the use of APIs, and</li>
 				<li>provides services beyond those offered by the user agent to facilitate user interaction with web content by people with disabilities</li>
 			</ul>
       <p>This definition may differ from that used in other documents.</p>
@@ -763,7 +760,7 @@ var[data-type]:hover::before {
     </dd>
     <dt><dfn data-dfn-type="dfn" id="dfn-expose">Expose</dfn></dt>
     <dd>
-      <p>Translated to platform-specific <a class="termref internalDFN" data-lt="accessibility api" href="#dfn-accessibility-api" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> as defined in the <a href="" class="core-mapping">Core Accessibility <abbr title="application programming interface">API</abbr> Mappings</a>. [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1">CORE-AAM-1.1</a></cite>]</p>
+      <p>Translated to platform-specific <a class="termref internalDFN" data-lt="accessibility api" href="#dfn-accessibility-api" data-link-type="dfn">accessibility APIs</a> as defined in the <a href="" class="core-mapping">Core Accessibility <abbr title="application programming interface">API</abbr> Mappings</a>. [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam-1.1" title="Core Accessibility API Mappings 1.1">CORE-AAM-1.1</a></cite>]</p>
     </dd>
 	<dt><dfn data-lt="graphical document|graphical documents|Graphical Document" data-dfn-type="dfn" id="dfn-graphical-document">Graphical Document</dfn></dt>
     <dd>
@@ -812,7 +809,7 @@ var[data-type]:hover::before {
     <dt><dfn data-lt="object|objects|Object" data-dfn-type="dfn" id="dfn-object">Object</dfn></dt>
     <dd>
       <p>In the context of user interfaces,  an item in the   perceptual user experience, represented in markup languages by one or   more <a class="termref internalDFN" data-lt="element" href="#dfn-element" data-link-type="dfn">elements</a>, and rendered by <a class="termref internalDFN" data-lt="user agent" href="#dfn-user-agent" data-link-type="dfn">user agents</a>.</p>
-    In the context of programming, the instantiation of one or more <a class="termref internalDFN" data-lt="class" href="#dfn-class" data-link-type="dfn">classes</a> and interfaces which define the general characteristics of similar objects. An object in an <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">API</abbr></a> may represent one or more <abbr title="Document Object Model">DOM</abbr> objects. <a class="termref internalDFN" data-lt="accessibility api" href="#dfn-accessibility-api" data-link-type="dfn">Accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a> have defined interfaces that are distinct from <abbr title="Document Object Model">DOM</abbr> interfaces.</dd>
+    In the context of programming, the instantiation of one or more <a class="termref internalDFN" data-lt="class" href="#dfn-class" data-link-type="dfn">classes</a> and interfaces which define the general characteristics of similar objects. An object in an <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">API</abbr></a> may represent one or more <abbr title="Document Object Model">DOM</abbr> objects. <a class="termref internalDFN" data-lt="accessibility api" href="#dfn-accessibility-api" data-link-type="dfn">Accessibility APIs</a> have defined interfaces that are distinct from <abbr title="Document Object Model">DOM</abbr> interfaces.</dd>
   
     <dt><dfn data-dfn-type="dfn" id="dfn-ontology">Ontology</dfn></dt>
     <dd>
@@ -899,7 +896,7 @@ var[data-type]:hover::before {
     </section>
 
     <section class="normative" id="mapping-mathml-to-accessibility-apis">
-      <h2 id="x4-mapping-mathml-to-accessibility-apis"><bdi class="secno">4. </bdi>Mapping MathML to Accessibility <abbr title="Application Programming Interfaces">APIs</abbr><a class="self-link" aria-label="§" href="#mapping-mathml-to-accessibility-apis"></a></h2>
+      <h2 id="x4-mapping-mathml-to-accessibility-apis"><bdi class="secno">4. </bdi>Mapping MathML to Accessibility APIs<a class="self-link" aria-label="§" href="#mapping-mathml-to-accessibility-apis"></a></h2>
 
 	<section id="mapping_general">
 	  <h3 id="x4-1-general-rules-for-exposing-wai-aria-semantics"><bdi class="secno">4.1 </bdi>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics<a class="self-link" aria-label="§" href="#mapping_general"></a></h3>
@@ -931,7 +928,7 @@ var[data-type]:hover::before {
 	  <h3 id="x4-4-mathml-element-mappings"><bdi class="secno">4.4 </bdi>MathML Element Mappings<a class="self-link" aria-label="§" href="#mathml-element-mappings"></a></h3>
 	  <div class="table-container" style="display: none;">
 	    <table class="map-table elements" id="element-mapping-table">
-	      <caption>Mappings of MathML elements to platform <a class="termref internalDFN" href="#dfn-accessibility-api" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a></caption>
+	      <caption>Mappings of MathML elements to platform <a class="termref internalDFN" href="#dfn-accessibility-api" data-link-type="dfn">accessibility APIs</a></caption>
 	      <thead>
 		<tr>
 		  <th>Element</th>
@@ -1327,7 +1324,7 @@ var[data-type]:hover::before {
 	  <h3 id="x4-5-mathml-attribute-mappings"><bdi class="secno">4.5 </bdi>MathML Attribute Mappings<a class="self-link" aria-label="§" href="#mathml-attribute-mappings"></a></h3>
 	  <div class="table-container" style="display: none;">
 	    <table class="map-table attributes" id="attribute-mapping-table">
-	      <caption>Mappings of MathML attributes to platform <a class="termref internalDFN" href="#dfn-accessibility-api" data-link-type="dfn">accessibility <abbr title="Application Programming Interfaces">APIs</abbr></a></caption>
+	      <caption>Mappings of MathML attributes to platform <a class="termref internalDFN" href="#dfn-accessibility-api" data-link-type="dfn">accessibility APIs</a></caption>
 	      <thead>
 		<tr>
 		  <th>Attribute</th>
