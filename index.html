@@ -266,8 +266,8 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathFraction</code></span><br />
 		    <span class="attrs">AXAttributes:
-		      <code>AXMathFractionNumerator</code> pointing to a first child<br />
-		      <code>AXMathFractionDenominator</code> pointing to a second child
+		      <code>AXMathFractionNumerator</code> pointing to a first in-flow child<br />
+		      <code>AXMathFractionDenominator</code> pointing to a second in-flow child
 		    </span>
 		  </td>
 		</tr>
@@ -297,13 +297,13 @@
 		    <span class="subrole">AXSubrole: <code>AXMathMultiscript</code></span><br />
 		    <span class="attrs">AXAttributes:<ul>
 		      <li><code>AXMathPrescripts</code> is an array containing a dictionary of
-		      <code>AXMathSubscript</code> and <code>AXMathSubscript</code> pointing to
-		      a first and second children correspondigly of a child
+		      <code>AXMathSubscript</code> and <code>AXMathSupscript</code> pointing to
+		      a first and second in-flow children correspondingly of a in-flow child
 		      <a data-cite="MathML3/chapter3.html#presm.mprescripts">`mprescripts`</a>
 		      element;
 		      <li><code>AXMathPostscripts</code> is an array containing a dictionary of
-		      <code>AXMathSubscript</code> and <code>AXMathSubscript</code> pointing to
-		      subscript and superscript elements (second and third child correspondigly) preceeding
+		      <code>AXMathSubscript</code> and <code>AXMathSupscript</code> pointing to
+		      subscript and superscript elements (second and third in-flow children correspondingly) preceeding
 		      <a data-cite="MathML3/chapter3.html#presm.mprescripts">`mprescripts`</a>
 		      element.
 		    </ul></span>
@@ -347,8 +347,8 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathUnderOver</code></span><br />
 		    <span class="attrs">AXAttributes:
-		      <code>AXMathBase</code> pointing to a first child
-		      <code>AXMathOver</code> pointing to a second child
+		      <code>AXMathBase</code> pointing to a first in-flow child
+		      <code>AXMathOver</code> pointing to a second in-flow child
 		    </span>
 		  </td>
 		</tr>
@@ -386,8 +386,8 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathRoot</code></span><br />
 		    <span class="attrs">AXAttributes:
-		      <code>AXMathRootRadicand</code> pointing to a first child<br />
-		      <code>AXMathRootIndex</code> pointing to a second child
+		      <code>AXMathRootRadicand</code> pointing to a first in-flow child<br />
+		      <code>AXMathRootIndex</code> pointing to a second in-flow child
 		    </span>
 		  </td>
 		</tr>
@@ -439,7 +439,7 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathSquareRoot</code></span><br />
 		    <span class="attrs">AXAttributes:
-		      <code>AXMathRootRadicand</code> pointing to a first child
+		      <code>AXMathRootRadicand</code> pointing to a first in-flow child
 		    </span>
 		  </td>
 		</tr>
@@ -468,8 +468,8 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathSubscriptSuperscript</code></span><br />
 		    <span class="attrs">AXAttributes:
-		      <code>AXMathBase</code> pointing to a first child<br />
-		      <code>AXMathSubscript</code> pointing to a second child
+		      <code>AXMathBase</code> pointing to a first in-flow child<br />
+		      <code>AXMathSubscript</code> pointing to a second in-flow child
 		    </span>
 		  </td>
 		  </td>
@@ -486,9 +486,9 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathSubscriptSuperscript</code></span><br />
 		    <span class="attrs">AXAttributes:
-		      <code>AXMathBase</code> pointing to a first child
-		      <code>AXMathSubscript</code> pointing to a second child<br />
-		      <code>AXMathSuperscript</code> pointing to a third child
+		      <code>AXMathBase</code> pointing to a first in-flow child
+		      <code>AXMathSubscript</code> pointing to a second in-flow child<br />
+		      <code>AXMathSuperscript</code> pointing to a third in-flow child
 		    </span>
 		  </td>
 		  </td>
@@ -505,8 +505,8 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathSubscriptSuperscript</code></span><br />
 		    <span class="attrs">AXAttributes:
-		      <code>AXMathBase</code> pointing to a first child<br />
-		      <code>AXMathSuperscript</code> pointing to a second child
+		      <code>AXMathBase</code> pointing to a first in-flow child<br />
+		      <code>AXMathSuperscript</code> pointing to a second in-flow child
 		    </span>
 		  </td>
 		</tr>
@@ -576,8 +576,8 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathUnderOver</code></span><br />
 		    <span class="attrs">AXAttributes:
-		      <code>AXMathBase</code> pointing to a first child<br />
-		      <code>AXMathUnder</code> pointing to a second child
+		      <code>AXMathBase</code> pointing to a first in-flow child<br />
+		      <code>AXMathUnder</code> pointing to a second in-flow child
 		    </span>
 		  </td>
 		</tr>
@@ -593,9 +593,9 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathUnderOver</code></span><br />
 		    <span class="attrs">AXAttributes:
-		      <code>AXMathBase</code> pointing to a first child<br />
-		      <code>AXMathUnder</code> pointing to a second child<br />
-		      <code>AXMathOver</code> pointing to a third child
+		      <code>AXMathBase</code> pointing to a first in-flow child<br />
+		      <code>AXMathUnder</code> pointing to a second in-flow child<br />
+		      <code>AXMathOver</code> pointing to a third in-flow child
 		    </span>
 		  </td>
 		</tr>
