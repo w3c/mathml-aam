@@ -296,14 +296,16 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathMultiscript</code></span><br />
 		    <span class="attrs">AXAttributes:<ul>
-		      <li><code>AXMathPrescripts</code> is an array containing a dictionary of
+		      <li><code>AXMathPostscripts</code> is an array of dictionaries of
 		      <code>AXMathSubscript</code> and <code>AXMathSupscript</code> pointing to
-		      a first and second in-flow children correspondingly of a in-flow child
+		      postsubscript and postsupscript elements, i.e. N and N + 1 in-flow children
+		      starting from a second in-flow child and preceeding
 		      <a data-cite="MathML3/chapter3.html#presm.mprescripts">`mprescripts`</a>
 		      element;
-		      <li><code>AXMathPostscripts</code> is an array containing a dictionary of
+		      <li><code>AXMathPrescripts</code> is an array of dictionaries of
 		      <code>AXMathSubscript</code> and <code>AXMathSupscript</code> pointing to
-		      subscript and superscript elements (second and third in-flow children correspondingly) preceeding
+		      presubscript and presupscript elements, i.e. N and N + 1 in-flow children
+		      following
 		      <a data-cite="MathML3/chapter3.html#presm.mprescripts">`mprescripts`</a>
 		      element.
 		    </ul></span>
