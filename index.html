@@ -298,16 +298,16 @@
 		    <span class="attrs">AXAttributes:<ul>
 		      <li><code>AXMathPostscripts</code> is an array of dictionaries of
 		      <code>AXMathSubscript</code> and <code>AXMathSupscript</code> pointing to
-		      postsubscript and postsupscript elements, i.e. N and N + 1 in-flow children
+		      postsubscript and postsupscript elements , i.e. N and N + 1 in-flow children
 		      starting from a second in-flow child and preceeding
 		      <a data-cite="MathML3/chapter3.html#presm.mprescripts">`mprescripts`</a>
-		      element;
+		      element if any;
 		      <li><code>AXMathPrescripts</code> is an array of dictionaries of
 		      <code>AXMathSubscript</code> and <code>AXMathSupscript</code> pointing to
 		      presubscript and presupscript elements, i.e. N and N + 1 in-flow children
-		      following
+		      starting after
 		      <a data-cite="MathML3/chapter3.html#presm.mprescripts">`mprescripts`</a>
-		      element.
+		      element if any or from index 1.
 		    </ul></span>
 		  </td>
 		</tr>
