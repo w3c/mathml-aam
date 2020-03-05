@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 25.3.1"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style>/* dfn popup panel that list all local references to a dfn */
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 25.3.2"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style>/* dfn popup panel that list all local references to a dfn */
 dfn {
   cursor: pointer;
 }
@@ -68,7 +68,35 @@ dfn {
     
     <title>MathML Accessiblity API Mappings 1.0</title>
     <script src="https://www.w3.org/scripts/jquery/1.11.3/jquery.min.js"></script>
-    <style id="respec-mainstyle">/*****************************************************************
+    
+    
+    
+
+    <link href="common/css/mapping-tables.css" rel="stylesheet" type="text/css">
+    <link href="common/css/common.css" rel="stylesheet" type="text/css">
+    
+
+    <script src="common/script/jquery.details.min.js"></script>
+    <script src="common/script/mapping-tables.js"></script>
+    <script type="text/javascript">
+      var mappingTableLabels = {
+	  viewByTable: "View as a single table",
+	  expand: "Expand all",
+	  collapse: "Collapse all",
+	  showHideCols: "Show/Hide Columns:",
+	  showActionText: "Show",
+	  hideActionText: "Hide",
+	  showToolTipText: "Show column",
+	  hideToolTipText: "Hide column",
+
+	  // map where keys are @id of associated mapping table:
+	  viewByLabels: {
+              "element-mapping-table": "View by element",
+              "attribute-mapping-table": "View by attribute"
+	  }
+      }
+    </script>
+  <style id="respec-mainstyle">/*****************************************************************
  * ReSpec specific CSS
  *****************************************************************/
 @keyframes pop {
@@ -354,35 +382,7 @@ h6 > a.self-link::before {
     display: none;
   }
 }
-</style>
-    
-    
-
-    <link href="common/css/mapping-tables.css" rel="stylesheet" type="text/css">
-    <link href="common/css/common.css" rel="stylesheet" type="text/css">
-    
-
-    <script src="common/script/jquery.details.min.js"></script>
-    <script src="common/script/mapping-tables.js"></script>
-    <script type="text/javascript">
-      var mappingTableLabels = {
-	  viewByTable: "View as a single table",
-	  expand: "Expand all",
-	  collapse: "Collapse all",
-	  showHideCols: "Show/Hide Columns:",
-	  showActionText: "Show",
-	  hideActionText: "Hide",
-	  showToolTipText: "Show column",
-	  hideToolTipText: "Hide column",
-
-	  // map where keys are @id of associated mapping table:
-	  viewByLabels: {
-              "element-mapping-table": "View by element",
-              "attribute-mapping-table": "View by attribute"
-	  }
-      }
-    </script>
-  <meta name="description" content="The MathML Accessibility API Mappings (MathML-AAM) specification defines how user agents
+</style><meta name="description" content="The MathML Accessibility API Mappings (MathML-AAM) specification defines how user agents
 	map Mathematical Markup Language (MathML) [MathML3] to platform accessibility APIs. It
 	extends the Core Accessibility API Mappings (CORE-AAM) specification [CORE-AAM-1.2]."><link rel="canonical" href="https://www.w3.org/TR/mathml-aam-1.0/"><style>var {
   position: relative;
@@ -469,58 +469,12 @@ var[data-type]:hover::before {
     "PR": "https://www.w3.org/TR/wai-aria-1.1/",
     "REC": "https://www.w3.org/TR/wai-aria/"
   },
-  "localBiblio": {
-    "ACCNAME-AAM": {
-      "aliasOf": "ACCNAME-AAM-1.1"
-    },
-    "ARIA-PRACTICES": {
-      "aliasOf": "WAI-ARIA-PRACTICES-1.1"
-    },
-    "CORE-AAM": {
-      "aliasOf": "CORE-AAM-1.1"
-    },
-    "DPUB-ARIA": {
-      "aliasOf": "DPUB-ARIA-1.0"
-    },
-    "GRAPHICS-ARIA": {
-      "aliasOf": "GRAPHICS-ARIA-1.0"
-    },
-    "GRAPHICS-AAM": {
-      "aliasOf": "GRAPHICS-AAM-1.0"
-    },
-    "EPUB-Content": {
-      "href": "http://www.idpf.org/epub/31/spec/epub-contentdocs.html",
-      "title": "EPUB Content Documents 3.1",
-      "publisher": "IDPF"
-    },
-    "HTML-AAM": {
-      "aliasOf": "HTML-AAM-1.0"
-    },
-    "MathML-Core": {
-      "href": "https://mathml-refresh.github.io/mathml-core/",
-      "title": "MathML Core",
-      "authors": [
-        "David Carlisle",
-        "Frédéric Wang"
-      ],
-      "id": "mathml-core"
-    },
-    "SVG-AAM": {
-      "aliasOf": "SVG-AAM-1.0"
-    },
-    "SVG1": {
-      "aliasOf": "SVG"
-    },
-    "WAI-ARIA": {
-      "aliasOf": "WAI-ARIA-1.1"
-    }
-  },
   "preProcess": [
     null
   ],
-  "publishDate": "2020-03-02",
-  "publishISODate": "2020-03-02T00:00:00.000Z",
-  "generatedSubtitle": "Editor's Draft 02 March 2020"
+  "publishDate": "2020-03-05",
+  "publishISODate": "2020-03-05T00:00:00.000Z",
+  "generatedSubtitle": "Editor's Draft 05 March 2020"
 }</script><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"></head>
 
   <body class="h-entry"><div class="head">
@@ -528,7 +482,7 @@ var[data-type]:hover::before {
       
       <h2>
         W3C Editor's Draft
-        <time class="dt-published" datetime="2020-03-02">02 March 2020</time>
+        <time class="dt-published" datetime="2020-03-05">05 March 2020</time>
       </h2>
       <dl>
         <dt>This version:</dt><dd>
@@ -651,7 +605,7 @@ var[data-type]:hover::before {
     </p><p>
                   This document is governed by the
                   <a id="w3c_process_revision" href="https://www.w3.org/2019/Process-20190301/">1 March 2019 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#deprecated"><bdi class="secno">2.1 </bdi>Deprecated</a></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">3. </bdi>Important Terms</a></li><li class="tocline"><a class="tocxref" href="#mapping-mathml-to-accessibility-apis"><bdi class="secno">4. </bdi>Mapping MathML to Accessibility APIs</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_general"><bdi class="secno">4.1 </bdi>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a></li><li class="tocline"><a class="tocxref" href="#mapping_conflicts"><bdi class="secno">4.2 </bdi>Conflicts between native semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a class="tocxref" href="#mapping_nodirect"><bdi class="secno">4.3 </bdi>Exposing features that do not directly map to accessibility <abbr title="application programming interface">API</abbr></a></li><li class="tocline"><a class="tocxref" href="#mathml-element-mappings"><bdi class="secno">4.4 </bdi>MathML Element Mappings</a></li><li class="tocline"><a class="tocxref" href="#mathml-attribute-mappings"><bdi class="secno">4.5 </bdi>MathML Attribute Mappings</a></li><li class="tocline"><a class="tocxref" href="#changelog"><bdi class="secno">4.6 </bdi>Change Log</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-last-public-working-draft"><bdi class="secno">4.6.1 </bdi>Substantive changes since the last public working draft</a></li><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-creation-of-this-specification"><bdi class="secno">4.6.2 </bdi>Substantive changes since the creation of this specification</a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">A.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.2 </bdi>Informative references</a></li></ol></li></ol></nav>
+                </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#deprecated"><bdi class="secno">2.1 </bdi>Deprecated</a></li></ol></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">3. </bdi>Important Terms</a></li><li class="tocline"><a class="tocxref" href="#mapping-mathml-to-accessibility-apis"><bdi class="secno">4. </bdi>Mapping MathML to Accessibility APIs</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_general"><bdi class="secno">4.1 </bdi>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a></li><li class="tocline"><a class="tocxref" href="#mapping_conflicts"><bdi class="secno">4.2 </bdi>Conflicts between native semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a class="tocxref" href="#mapping_nodirect"><bdi class="secno">4.3 </bdi>Exposing features that do not directly map to accessibility <abbr title="application programming interface">API</abbr></a></li><li class="tocline"><a class="tocxref" href="#mathml-element-mappings"><bdi class="secno">4.4 </bdi>MathML Element Mappings</a></li><li class="tocline"><a class="tocxref" href="#mathml-attribute-mappings"><bdi class="secno">4.5 </bdi>MathML Attribute Mappings</a></li></ol></li><li class="tocline"><a class="tocxref" href="#changelog"><bdi class="secno">A. </bdi>Change Log</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-last-public-working-draft"><bdi class="secno">A.1 </bdi>Substantive changes since the last public working draft</a></li><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-creation-of-this-specification"><bdi class="secno">A.2 </bdi>Substantive changes since the creation of this specification</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">B. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">B.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">B.2 </bdi>Informative references</a></li></ol></li></ol></nav>
 
     <section id="introduction">
       <h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction<a class="self-link" aria-label="§" href="#introduction"></a></h2>
@@ -699,8 +653,10 @@ var[data-type]:hover::before {
       <p>Operating systems and other platforms provide a set of interfaces that expose information about <a class="termref internalDFN" data-lt="object" href="#dfn-object" data-link-type="dfn">objects</a> and <a class="termref internalDFN" data-lt="event" href="#dfn-event" data-link-type="dfn">events</a> to <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>. Assistive technologies use these interfaces to get information about and interact with those <a class="termref internalDFN" data-lt="widget" href="#dfn-widget" data-link-type="dfn">widgets</a>. Examples of accessibility APIs are <a href="https://msdn.microsoft.com/en-us/library/ms697270(VS.85).aspx">Microsoft Active Accessibility</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-msaa" title="Microsoft Active Accessibility (MSAA) 2.0">MSAA</a></cite>], <a href="https://msdn.microsoft.com/en-us/library/ee684013%28VS.85%29.aspx">Microsoft User Interface Automation</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-ui-automation" title="UI Automation">UI-AUTOMATION</a></cite>], <abbr title="Microsoft Active Accessibility">MSAA</abbr> with <cite><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898(v=vs.85).aspx"><abbr title="User Interface Automation">UIA</abbr> Express</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-uia-express" title="The IAccessibleEx Interface">UIA-EXPRESS</a></cite>], the
       	<a href="https://developer.apple.com/documentation/appkit/accessibility/nsaccessibility">Mac <abbr title="OS Ten">OS X</abbr> Accessibility Protocol</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-axapi" title="The NSAccessibility Protocol for macOS">AXAPI</a></cite>], the <cite><a href="https://developer.gnome.org/atk/unstable/">Linux/Unix Accessibility Toolkit</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-atk" title="ATK - Accessibility Toolkit">ATK</a></cite>] and <cite><a href="https://developer.gnome.org/libatspi/stable/">Assistive Technology Service Provider Interface</a></cite> [<cite><a class="bibref" data-link-type="biblio" href="#bib-at-spi" title="Assistive Technology Service Provider Interface">AT-SPI</a></cite>], and <a href="https://wiki.linuxfoundation.org/accessibility/iaccessible2/start">IAccessible2</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-iaccessible2" title="IAccessible2">IAccessible2</a></cite>].</p>
     </dd>
-    
-    
+    <dt><dfn id="dfn-accessibility-subtree" data-dfn-type="dfn">Accessibility Subtree</dfn></dt>
+    <dd>
+      <p>An <a href="#dfn-accessible-object" class="internalDFN" data-link-type="dfn">accessible object</a> in the <a href="#dfn-accessibility-tree" class="internalDFN" data-link-type="dfn">accessibility tree</a> and its descendants in that tree. It does not include objects which have relationships other than parent-child in that tree. For example, it does not include objects linked via <a href="https://w3c.github.io/aria/#aria-flowto" class="property-reference"><code>aria-flowto</code></a> unless those objects are also descendants in the <a href="#dfn-accessibility-tree" class="internalDFN" data-link-type="dfn">accessibility tree</a>.</p>
+    </dd>
     <dt><dfn id="dfn-accessibility-tree" data-dfn-type="dfn">Accessibility Tree</dfn></dt>
     <dd>
       <p>Tree of <a class="termref internalDFN" data-lt="accessible object" href="#dfn-accessible-object" data-link-type="dfn">accessible objects</a> that represents the structure of the user interface (<abbr title="user interface">UI</abbr>). Each node in the accessibility tree represents an element in the <abbr title="user interface">UI</abbr> as exposed through the <a href="#dfn-accessibility-api" class="internalDFN" data-link-type="dfn">accessibility <abbr title="Application Programming Interface">API</abbr></a>; for example, a push button, a check box, or container.</p>
@@ -1398,28 +1354,30 @@ var[data-type]:hover::before {
 	    </table>
 	  </div>
     </section>
+    </section>
 
     <section class="appendix" id="changelog">
-      <h3 id="x4-6-change-log"><bdi class="secno">4.6 </bdi>Change Log<a class="self-link" aria-label="§" href="#changelog"></a></h3>
+      <h2 id="a-change-log"><bdi class="secno">A. </bdi>Change Log<a class="self-link" aria-label="§" href="#changelog"></a></h2>
       <section id="substantive-changes-since-the-last-public-working-draft">
-	<h4 id="x4-6-1-substantive-changes-since-the-last-public-working-draft"><bdi class="secno">4.6.1 </bdi>Substantive changes since the last public working draft<a class="self-link" aria-label="§" href="#substantive-changes-since-the-last-public-working-draft"></a></h4>
+	<h3 id="a-1-substantive-changes-since-the-last-public-working-draft"><bdi class="secno">A.1 </bdi>Substantive changes since the last public working draft<a class="self-link" aria-label="§" href="#substantive-changes-since-the-last-public-working-draft"></a></h3>
 	<ul>
 	  
 	</ul>
       </section>
       <section id="substantive-changes-since-the-creation-of-this-specification">
-	<h4 id="x4-6-2-substantive-changes-since-the-creation-of-this-specification"><bdi class="secno">4.6.2 </bdi>Substantive changes since the creation of this specification<a class="self-link" aria-label="§" href="#substantive-changes-since-the-creation-of-this-specification"></a></h4>
+	<h3 id="a-2-substantive-changes-since-the-creation-of-this-specification"><bdi class="secno">A.2 </bdi>Substantive changes since the creation of this specification<a class="self-link" aria-label="§" href="#substantive-changes-since-the-creation-of-this-specification"></a></h3>
 	<ul>
 	</ul>
       </section>
+    </section>
   
 
-</section></section><section id="references" class="appendix"><h2 id="a-references"><bdi class="secno">A. </bdi>References<a class="self-link" aria-label="§" href="#references"></a></h2><section id="normative-references">
-        <h3 id="a-1-normative-references"><bdi class="secno">A.1 </bdi>Normative references<a class="self-link" aria-label="§" href="#normative-references"></a></h3>
+<section id="references" class="appendix"><h2 id="b-references"><bdi class="secno">B. </bdi>References<a class="self-link" aria-label="§" href="#references"></a></h2><section id="normative-references">
+        <h3 id="b-1-normative-references"><bdi class="secno">B.1 </bdi>Normative references<a class="self-link" aria-label="§" href="#normative-references"></a></h3>
       <dl class="bibliography">
         <dt id="bib-at-spi">[AT-SPI]</dt><dd><a href="https://developer.gnome.org/libatspi/stable/"><cite>Assistive Technology Service Provider Interface</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/libatspi/stable/">https://developer.gnome.org/libatspi/stable/</a></dd><dt id="bib-atk">[ATK]</dt><dd><a href="https://developer.gnome.org/atk/stable/"><cite>ATK - Accessibility Toolkit</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/atk/stable/">https://developer.gnome.org/atk/stable/</a></dd><dt id="bib-axapi">[AXAPI]</dt><dd><a href="https://developer.apple.com/documentation/appkit/nsaccessibility"><cite>The NSAccessibility Protocol for macOS</cite></a>.  Apple, Inc. URL: <a href="https://developer.apple.com/documentation/appkit/nsaccessibility">https://developer.apple.com/documentation/appkit/nsaccessibility</a></dd><dt id="bib-core-aam-1.1">[CORE-AAM-1.1]</dt><dd><a href="https://www.w3.org/TR/core-aam-1.1/"><cite>Core Accessibility API Mappings 1.1</cite></a>. Joanmarie Diggs; Joseph Scheuhammer; Richard Schwerdtfeger; Michael Cooper; Andi Snow-Weaver; Aaron Leventhal.  W3C. 14 December 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/core-aam-1.1/">https://www.w3.org/TR/core-aam-1.1/</a></dd><dt id="bib-core-aam-1.2">[CORE-AAM-1.2]</dt><dd><a href="https://www.w3.org/TR/core-aam-1.2/"><cite>Core Accessibility API Mappings 1.2</cite></a>. Joanmarie Diggs; Michael Cooper; Richard Schwerdtfeger; Joseph Scheuhammer; Andi Snow-Weaver; Aaron Leventhal; Melanie Richards; James Craig; Alexander Surkov.  W3C. 18 December 2019. W3C Working Draft. URL: <a href="https://www.w3.org/TR/core-aam-1.2/">https://www.w3.org/TR/core-aam-1.2/</a></dd><dt id="bib-iaccessible2">[IAccessible2]</dt><dd><a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2"><cite>IAccessible2</cite></a>.  Linux Foundation. URL: <a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2">https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2</a></dd><dt id="bib-mathml3">[MathML3]</dt><dd><a href="https://www.w3.org/TR/MathML3/"><cite>Mathematical Markup Language (MathML) Version 3.0 2nd Edition</cite></a>. David Carlisle; Patrick D F Ion; Robert R Miner.  W3C. 10 April 2014. W3C Recommendation. URL: <a href="https://www.w3.org/TR/MathML3/">https://www.w3.org/TR/MathML3/</a></dd><dt id="bib-msaa">[MSAA]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx"><cite>Microsoft Active Accessibility (MSAA) 2.0</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/ms697707.aspx">https://msdn.microsoft.com/en-us/library/ms697707.aspx</a></dd><dt id="bib-rfc2119">[RFC2119]</dt><dd><a href="https://tools.ietf.org/html/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119">https://tools.ietf.org/html/rfc2119</a></dd><dt id="bib-rfc8174">[RFC8174]</dt><dd><a href="https://tools.ietf.org/html/rfc8174"><cite>Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</cite></a>. B. Leiba.  IETF. May 2017. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc8174">https://tools.ietf.org/html/rfc8174</a></dd><dt id="bib-ui-automation">[UI-AUTOMATION]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx"><cite>UI Automation</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx">https://msdn.microsoft.com/en-us/library/ee684009%28v=vs.85%29.aspx</a></dd><dt id="bib-uia-express">[UIA-EXPRESS]</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx"><cite>The IAccessibleEx Interface</cite></a>.  Microsoft Corporation. URL: <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx">https://msdn.microsoft.com/en-us/library/windows/desktop/dd561898%28v=vs.85%29.aspx</a></dd><dt id="bib-wcag21">[WCAG21]</dt><dd><a href="https://www.w3.org/TR/WCAG21/"><cite>Web Content Accessibility Guidelines (WCAG) 2.1</cite></a>. Andrew Kirkpatrick; Joshue O Connor; Alastair Campbell; Michael Cooper.  W3C. 5 June 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a></dd>
       </dl></section><section id="informative-references">
-        <h3 id="a-2-informative-references"><bdi class="secno">A.2 </bdi>Informative references<a class="self-link" aria-label="§" href="#informative-references"></a></h3>
+        <h3 id="b-2-informative-references"><bdi class="secno">B.2 </bdi>Informative references<a class="self-link" aria-label="§" href="#informative-references"></a></h3>
       <dl class="bibliography">
         <dt id="bib-mathml-core">[MathML-Core]</dt><dd><a href="https://mathml-refresh.github.io/mathml-core/"><cite>MathML Core</cite></a>. David Carlisle; Frédéric Wang. URL: <a href="https://mathml-refresh.github.io/mathml-core/">https://mathml-refresh.github.io/mathml-core/</a></dd>
       </dl></section></section><p role="navigation" id="back-to-top"><a href="#title"><abbr title="Back to Top">↑</abbr></a></p><script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script></body></html>
