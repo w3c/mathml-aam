@@ -331,7 +331,7 @@
   "generatedSubtitle": "Editor's Draft 02 December 2020"
 }</script><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"></head>
 
-  <body class="h-entry toc-inline"><div class="head">
+  <body class="h-entry"><div class="head">
     <a class="logo" href="https://www.w3.org/"><img alt="W3C" width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"></a> <h1 id="title" class="title">MathML Accessiblity API Mappings 1.0</h1>
     
     <h2>
@@ -773,9 +773,12 @@
 		  <th><a href="https://www.w3.org/TR/MathML3/chapter5.html#mixing.elements.annotation"><code>annotation</code></a></th>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
-		  <td class="atk">TBD</td>
+		  <td class="atk">
+		    <span class="role">Role: <code>ATK_ROLE_STATIC</code></span><br>
+		    <span class="objattr">Object Attribute: <code>tag:annotation</code></span>
+		  </td>
 		  <td class="axapi">
-		    <span class="role">AXRole: <code>TBD</code></span><br>
+		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br>
 		    <span class="subrole">AXSubrole: <code>TBD</code></span>
 		  </td>
 		</tr>
@@ -783,9 +786,12 @@
 		  <th><a href="https://www.w3.org/TR/MathML3/chapter5.html#mixing.elements.annotation.xml"><code>annotation-xml</code></a></th>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
-		  <td class="atk">TBD</td>
+		  <td class="atk">
+		    <span class="role">Role: <code>ATK_ROLE_SECTION</code></span><br>
+		    <span class="objattr">Object Attribute: <code>tag:annotation-xml</code></span>
+		  </td>
 		  <td class="axapi">
-		    <span class="role">AXRole: <code>TBD</code></span><br>
+		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br>
 		    <span class="subrole">AXSubrole: <code>TBD</code></span>
 		  </td>
 		</tr>
@@ -800,19 +806,6 @@
 		  <td class="axapi">
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br>
 		    <span class="subrole">AXSubrole: <code>TBD</code></span>
-		  </td>
-		</tr>
-		<tr>
-		  <th><a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.menclose"><code>menclose</code></a></th>
-		  <td class="ia2">TBD</td>
-		  <td class="uia">TBD</td>
-		  <td class="atk">
-		    <span class="role">Role: <code>ATK_ROLE_SECTION</code></span><br>
-		    <span class="objattr">Object Attribute: <code>tag:menclose</code></span>
-		  </td>
-		  <td class="axapi">
-		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br>
-		    <span class="subrole">AXSubrole: <code>nil</code></span>
 		  </td>
 		</tr>
 		<tr>
@@ -932,9 +925,12 @@
 		  <th><a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mpadded"><code>mpadded</code></a></th>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
-		  <td class="atk">TBD</td>
+		  <td class="atk">
+		    <span class="role">Role: <code>ATK_ROLE_SECTION</code></span><br>
+		    <span class="objattr">Object Attribute: <code>tag:mpadded</code></span>
+		  </td>
 		  <td class="axapi">
-		    <span class="role">AXRole: <code>TBD</code></span><br>
+		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br>
 		    <span class="subrole">AXSubrole: <code>TBD</code></span>
 		  </td>
 		</tr>
@@ -997,11 +993,8 @@
 		  <th><a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mspace"><code>mspace</code></a></th>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
-		  <td class="atk">TBD</td>
-		  <td class="axapi">
-		    <span class="role">AXRole: <code>TBD</code></span><br>
-		    <span class="subrole">AXSubrole: <code>TBD</code></span>
-		  </td>
+		  <td class="atk">Not mapped</td>
+		  <td class="axapi">Not mapped</td>
 		</tr>
 		<tr>
 		  <th><a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mroot"><code>msqrt</code></a></th>
@@ -1192,9 +1185,12 @@
 		  <th><a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.semantics"><code>semantics</code></a></th>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
-		  <td class="atk">TBD</td>
+		  <td class="atk">
+		    <span class="role">Role: <code>ATK_ROLE_SECTION</code></span><br>
+		    <span class="objattr">Object Attribute: <code>tag:semantics</code></span>
+		  </td>
 		  <td class="axapi">
-		    <span class="role">AXRole: <code>TBD</code></span><br>
+		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br>
 		    <span class="subrole">AXSubrole: <code>TBD</code></span>
 		  </td>
 		</tr>
