@@ -61,7 +61,7 @@
   "name": "MathML Accessiblity API Mappings 1.0",
   "inLanguage": "en",
   "license": "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
-  "datePublished": "2021-10-14",
+  "datePublished": "2021-11-04",
   "copyrightHolder": {
     "name": "World Wide Web Consortium",
     "url": "https://www.w3.org/"
@@ -222,6 +222,32 @@
       }
     },
     {
+      "id": "https://www.w3.org/TR/wai-aria-1.1/",
+      "type": "TechArticle",
+      "name": "Accessible Rich Internet Applications (WAI-ARIA) 1.1",
+      "url": "https://www.w3.org/TR/wai-aria-1.1/",
+      "creator": [
+        {
+          "name": "Joanmarie Diggs"
+        },
+        {
+          "name": "Shane McCarron"
+        },
+        {
+          "name": "Michael Cooper"
+        },
+        {
+          "name": "Richard Schwerdtfeger"
+        },
+        {
+          "name": "James Craig"
+        }
+      ],
+      "publisher": {
+        "name": "W3C"
+      }
+    },
+    {
       "id": "https://www.rfc-editor.org/rfc/rfc2119",
       "type": "TechArticle",
       "name": "Key words for use in RFCs to Indicate Requirement Levels",
@@ -267,6 +293,32 @@
       ],
       "publisher": {
         "name": "W3C"
+      }
+    },
+    {
+      "id": "https://html.spec.whatwg.org/multipage/",
+      "type": "TechArticle",
+      "name": "HTML Standard",
+      "url": "https://html.spec.whatwg.org/multipage/",
+      "creator": [
+        {
+          "name": "Anne van Kesteren"
+        },
+        {
+          "name": "Domenic Denicola"
+        },
+        {
+          "name": "Ian Hickson"
+        },
+        {
+          "name": "Philip Jägenstedt"
+        },
+        {
+          "name": "Simon Pieters"
+        }
+      ],
+      "publisher": {
+        "name": "WHATWG"
       }
     },
     {
@@ -323,12 +375,18 @@
     "PR": "https://www.w3.org/TR/wai-aria-1.1/",
     "REC": "https://www.w3.org/TR/wai-aria/"
   },
+  "coreMappingURLs": {
+    "ED": "https://w3c.github.io/core-aam/",
+    "WD": "https://www.w3.org/TR/core-aam-1.1/",
+    "FPWD": "https://www.w3.org/TR/core-aam-1.1/",
+    "REC": "https://www.w3.org/TR/wai-aria-implementation/"
+  },
   "preProcess": [
     null
   ],
-  "publishDate": "2021-10-14",
-  "publishISODate": "2021-10-14T00:00:00.000Z",
-  "generatedSubtitle": "Editor's Draft 14 October 2021"
+  "publishDate": "2021-11-04",
+  "publishISODate": "2021-11-04T00:00:00.000Z",
+  "generatedSubtitle": "Editor's Draft 04 November 2021"
 }</script><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"></head>
 
   <body class="h-entry"><div class="head">
@@ -336,7 +394,7 @@
     
     <h2>
       W3C Editor's Draft
-      <time class="dt-published" datetime="2021-10-14">14 October 2021</time>
+      <time class="dt-published" datetime="2021-11-04">04 November 2021</time>
     </h2>
     <dl>
       <dt>This version:</dt><dd>
@@ -768,6 +826,7 @@
 		  <th><abbr title="User Interface Automation">UIA</abbr></th>
 		  <th><abbr title="Accessibility Toolkit">ATK</abbr></th>
 		  <th><abbr title="macOS Accessibility Protocol">AX API</abbr></th>
+                  <th>[<cite><a class="bibref" data-link-type="biblio" href="#bib-wai-aria-1.1" title="Accessible Rich Internet Applications (WAI-ARIA) 1.1">wai-aria-1.1</a></cite>]</th>
 		</tr>
 	      </thead>
               <tbody>
@@ -809,6 +868,16 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br>
 		    <span class="subrole">AXSubrole: <code>TBD</code></span>
 		  </td>
+		</tr>
+		<tr>
+		  <th>
+		    <a href="https://html.spec.whatwg.org/multipage/embedded-content-other.html#mathml"><code>math</code></a>
+		  </th>
+		  <td class="ia2"><div class="general">Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</div></td>
+		  <td class="uia"><div class="general">Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</div></td>
+		  <td class="atk"><div class="general">Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</div></td>
+		  <td class="ax"><div class="general">Use <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> mapping</div></td>
+		  <td class="aria"><a class="core-mapping" href="https://w3c.github.io/core-aam/#role-map-math"><code>math</code></a> role</td>
 		</tr>
 		<tr>
 		  <th><a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.merror"><code>merror</code></a></th>
@@ -1444,7 +1513,7 @@
         Normative references
       <a class="self-link" aria-label="§" href="#normative-references"></a></h3>
     <dl class="bibliography">
-      <dt id="bib-at-spi">[AT-SPI]</dt><dd><a href="https://developer.gnome.org/libatspi/stable/"><cite>Assistive Technology Service Provider Interface</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/libatspi/stable/">https://developer.gnome.org/libatspi/stable/</a></dd><dt id="bib-atk">[ATK]</dt><dd><a href="https://developer.gnome.org/atk/stable/"><cite>ATK - Accessibility Toolkit</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/atk/stable/">https://developer.gnome.org/atk/stable/</a></dd><dt id="bib-axapi">[AXAPI]</dt><dd><a href="https://developer.apple.com/documentation/appkit/nsaccessibility"><cite>The NSAccessibility Protocol for macOS</cite></a>.  Apple, Inc. URL: <a href="https://developer.apple.com/documentation/appkit/nsaccessibility">https://developer.apple.com/documentation/appkit/nsaccessibility</a></dd><dt id="bib-core-aam-1.2">[CORE-AAM-1.2]</dt><dd><a href="https://www.w3.org/TR/core-aam-1.2/"><cite>Core Accessibility API Mappings 1.2</cite></a>. Joanmarie Diggs; Michael Cooper; Richard Schwerdtfeger; Joseph Scheuhammer; Andi Snow-Weaver; Aaron Leventhal; Melanie Richards; James Craig; Alexander Surkov.  W3C. 18 December 2019. W3C Working Draft. URL: <a href="https://www.w3.org/TR/core-aam-1.2/">https://www.w3.org/TR/core-aam-1.2/</a></dd><dt id="bib-iaccessible2">[IAccessible2]</dt><dd><a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2"><cite>IAccessible2</cite></a>.  Linux Foundation. URL: <a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2">https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2</a></dd><dt id="bib-mathml3">[MathML3]</dt><dd><a href="https://www.w3.org/TR/MathML3/"><cite>Mathematical Markup Language (MathML) Version 3.0 2nd Edition</cite></a>. David Carlisle; Patrick D F Ion; Robert R Miner.  W3C. 10 April 2014. W3C Recommendation. URL: <a href="https://www.w3.org/TR/MathML3/">https://www.w3.org/TR/MathML3/</a></dd><dt id="bib-msaa">[MSAA]</dt><dd><a href="https://docs.microsoft.com/en-us/windows/win32/winauto/microsoft-active-accessibility"><cite>Microsoft Active Accessibility (MSAA)</cite></a>.  Microsoft Corporation. URL: <a href="https://docs.microsoft.com/en-us/windows/win32/winauto/microsoft-active-accessibility">https://docs.microsoft.com/en-us/windows/win32/winauto/microsoft-active-accessibility</a></dd><dt id="bib-rfc2119">[RFC2119]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a></dd><dt id="bib-rfc8174">[RFC8174]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc8174"><cite>Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</cite></a>. B. Leiba.  IETF. May 2017. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc8174">https://www.rfc-editor.org/rfc/rfc8174</a></dd><dt id="bib-ui-automation">[UI-AUTOMATION]</dt><dd><a href="https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification"><cite>UI Automation</cite></a>.  Microsoft Corporation. URL: <a href="https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification">https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification</a></dd><dt id="bib-uia-express">[UIA-EXPRESS]</dt><dd><a href="https://docs.microsoft.com/en-us/windows/win32/winauto/iaccessibleex"><cite>The IAccessibleEx Interface</cite></a>.  Microsoft Corporation. URL: <a href="https://docs.microsoft.com/en-us/windows/win32/winauto/iaccessibleex">https://docs.microsoft.com/en-us/windows/win32/winauto/iaccessibleex</a></dd><dt id="bib-wcag21">[WCAG21]</dt><dd><a href="https://www.w3.org/TR/WCAG21/"><cite>Web Content Accessibility Guidelines (WCAG) 2.1</cite></a>. Andrew Kirkpatrick; Joshue O'Connor; Alastair Campbell; Michael Cooper.  W3C. 5 June 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a></dd>
+      <dt id="bib-at-spi">[AT-SPI]</dt><dd><a href="https://developer.gnome.org/libatspi/stable/"><cite>Assistive Technology Service Provider Interface</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/libatspi/stable/">https://developer.gnome.org/libatspi/stable/</a></dd><dt id="bib-atk">[ATK]</dt><dd><a href="https://developer.gnome.org/atk/stable/"><cite>ATK - Accessibility Toolkit</cite></a>.  The GNOME Project. URL: <a href="https://developer.gnome.org/atk/stable/">https://developer.gnome.org/atk/stable/</a></dd><dt id="bib-axapi">[AXAPI]</dt><dd><a href="https://developer.apple.com/documentation/appkit/nsaccessibility"><cite>The NSAccessibility Protocol for macOS</cite></a>.  Apple, Inc. URL: <a href="https://developer.apple.com/documentation/appkit/nsaccessibility">https://developer.apple.com/documentation/appkit/nsaccessibility</a></dd><dt id="bib-core-aam-1.2">[CORE-AAM-1.2]</dt><dd><a href="https://www.w3.org/TR/core-aam-1.2/"><cite>Core Accessibility API Mappings 1.2</cite></a>. Joanmarie Diggs; Michael Cooper; Richard Schwerdtfeger; Joseph Scheuhammer; Andi Snow-Weaver; Aaron Leventhal; Melanie Richards; James Craig; Alexander Surkov.  W3C. 18 December 2019. W3C Working Draft. URL: <a href="https://www.w3.org/TR/core-aam-1.2/">https://www.w3.org/TR/core-aam-1.2/</a></dd><dt id="bib-html">[html]</dt><dd><a href="https://html.spec.whatwg.org/multipage/"><cite>HTML Standard</cite></a>. Anne van Kesteren; Domenic Denicola; Ian Hickson; Philip Jägenstedt; Simon Pieters.  WHATWG. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a></dd><dt id="bib-iaccessible2">[IAccessible2]</dt><dd><a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2"><cite>IAccessible2</cite></a>.  Linux Foundation. URL: <a href="https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2">https://www.linuxfoundation.org/collaborate/workgroups/accessibility/iaccessible2</a></dd><dt id="bib-mathml3">[MathML3]</dt><dd><a href="https://www.w3.org/TR/MathML3/"><cite>Mathematical Markup Language (MathML) Version 3.0 2nd Edition</cite></a>. David Carlisle; Patrick D F Ion; Robert R Miner.  W3C. 10 April 2014. W3C Recommendation. URL: <a href="https://www.w3.org/TR/MathML3/">https://www.w3.org/TR/MathML3/</a></dd><dt id="bib-msaa">[MSAA]</dt><dd><a href="https://docs.microsoft.com/en-us/windows/win32/winauto/microsoft-active-accessibility"><cite>Microsoft Active Accessibility (MSAA)</cite></a>.  Microsoft Corporation. URL: <a href="https://docs.microsoft.com/en-us/windows/win32/winauto/microsoft-active-accessibility">https://docs.microsoft.com/en-us/windows/win32/winauto/microsoft-active-accessibility</a></dd><dt id="bib-rfc2119">[RFC2119]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a></dd><dt id="bib-rfc8174">[RFC8174]</dt><dd><a href="https://www.rfc-editor.org/rfc/rfc8174"><cite>Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words</cite></a>. B. Leiba.  IETF. May 2017. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc8174">https://www.rfc-editor.org/rfc/rfc8174</a></dd><dt id="bib-ui-automation">[UI-AUTOMATION]</dt><dd><a href="https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification"><cite>UI Automation</cite></a>.  Microsoft Corporation. URL: <a href="https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification">https://docs.microsoft.com/en-us/windows/win32/winauto/ui-automation-specification</a></dd><dt id="bib-uia-express">[UIA-EXPRESS]</dt><dd><a href="https://docs.microsoft.com/en-us/windows/win32/winauto/iaccessibleex"><cite>The IAccessibleEx Interface</cite></a>.  Microsoft Corporation. URL: <a href="https://docs.microsoft.com/en-us/windows/win32/winauto/iaccessibleex">https://docs.microsoft.com/en-us/windows/win32/winauto/iaccessibleex</a></dd><dt id="bib-wai-aria-1.1">[wai-aria-1.1]</dt><dd><a href="https://www.w3.org/TR/wai-aria-1.1/"><cite>Accessible Rich Internet Applications (WAI-ARIA) 1.1</cite></a>. Joanmarie Diggs; Shane McCarron; Michael Cooper; Richard Schwerdtfeger; James Craig.  W3C. 14 December 2017. W3C Recommendation. URL: <a href="https://www.w3.org/TR/wai-aria-1.1/">https://www.w3.org/TR/wai-aria-1.1/</a></dd><dt id="bib-wcag21">[WCAG21]</dt><dd><a href="https://www.w3.org/TR/WCAG21/"><cite>Web Content Accessibility Guidelines (WCAG) 2.1</cite></a>. Andrew Kirkpatrick; Joshue O'Connor; Alastair Campbell; Michael Cooper.  W3C. 5 June 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a></dd>
     </dl></section><section id="informative-references">
       <h3 id="c-2-informative-references"><bdi class="secno">C.2 </bdi>
         Informative references
