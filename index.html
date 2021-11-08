@@ -50,6 +50,16 @@
 	      "PR" : "https://www.w3.org/TR/wai-aria-1.1/",
 	      "REC": "https://www.w3.org/TR/wai-aria/"
 	  },
+
+          // ED pointing to latest draft due to ED links not
+          // appropriately mapping on the core-aam spec.
+          coreMappingURLs: {
+              "ED":   "https://w3c.github.io/core-aam/",
+              "WD":   "https://www.w3.org/TR/core-aam-1.1/",
+              "FPWD": "https://www.w3.org/TR/core-aam-1.1/",
+              "REC":  "https://www.w3.org/TR/wai-aria-implementation/"
+          },
+
 	    preProcess:[linkCrossReferences],
 		postProcess:[],
 		definitionMap:[],
@@ -180,6 +190,7 @@
 	      <thead>
 		<tr>
 		  <th>Element</th>
+		  <th>[[wai-aria-1.1]]</th>
 		  <th>MSAA + IAccessible2</th>
 		  <th><abbr title="User Interface Automation">UIA</abbr></th>
 		  <th><abbr title="Accessibility Toolkit">ATK</abbr></th>
@@ -189,6 +200,7 @@
               <tbody>
 		<tr id="el-annotation">
 		  <th><a data-cite="MathML3/chapter5.html#mixing.elements.annotation">`annotation`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -202,6 +214,7 @@
 		</tr>
 		<tr id="el-annotation-xml">
 		  <th><a data-cite="MathML3/chapter5.html#mixing.elements.annotation.xml">`annotation-xml`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -215,6 +228,7 @@
 		</tr>
 		<tr id="el-maction">
 		  <th><a data-cite="MathML3/chapter3.html#presm.maction">`maction`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -226,8 +240,19 @@
 		    <span class="subrole">AXSubrole: <code>TBD</code></span>
 		  </td>
 		</tr>
+		<tr id="el-math">
+		  <th>
+		    <a data-cite="html/embedded-content-other.html#mathml">`math`</a>
+		  </th>
+		  <td class="aria"><a class="core-mapping" href="#role-map-math">`math`</a> role</td>
+		  <td class="ia2"><div class="general">Use WAI-ARIA mapping</div></td>
+		  <td class="uia"><div class="general">Use WAI-ARIA mapping</div></td>
+		  <td class="atk"><div class="general">Use WAI-ARIA mapping</div></td>
+		  <td class="ax"><div class="general">Use WAI-ARIA mapping</div></td>
+		</tr>
 		<tr id="el-merror">
 		  <th><a data-cite="MathML3/chapter3.html#presm.merror">`merror`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -241,6 +266,7 @@
 		</tr>
 		<tr id="el-mfrac">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mfrac">`mfrac`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -258,6 +284,7 @@
 		</tr>
 		<tr id="el-mi">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mi">`mi`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -271,6 +298,7 @@
 		</tr>
 		<tr id="el-mmultiscripts">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mmultiscripts">`mmultiscripts`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -298,6 +326,7 @@
 		</tr>
 		<tr id="el-mn">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mn">`mn`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -311,6 +340,7 @@
 		</tr>
 		<tr id="el-mo">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mo">`mo`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -324,6 +354,7 @@
 		</tr>
 		<tr id="el-mover">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mover">`mover`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -341,6 +372,7 @@
 		</tr>
 		<tr id="el-mpadded">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mpadded">`mpadded`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -354,6 +386,7 @@
 		</tr>
 		<tr id="el-mprescripts">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mmultiscripts">`mprescripts`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -366,6 +399,7 @@
 		</tr>
 		<tr id="el-mroot">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mroot">`mroot`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -376,13 +410,14 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathRoot</code></span><br />
 		    <span class="attrs">AXAttributes:
-		      <code>AXMathRootRadicand</code> pointing to the first in-flow child<br />
+		      <code>AXMathRootRadicand</code> is an array containing the first in-flow child as its unique element,<br />
 		      <code>AXMathRootIndex</code> pointing to the second in-flow child
 		    </span>
 		  </td>
 		</tr>
 		<tr id="el-mrow">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mrow">`mrow`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -396,6 +431,7 @@
 		</tr>
 		<tr id="el-ms">
 		  <th><a data-cite="MathML3/chapter3.html#presm.ms">`ms`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -409,6 +445,7 @@
 		</tr>
 		<tr id="el-mspace">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mspace">`mspace`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">Not mapped</td>
@@ -416,6 +453,7 @@
 		</tr>
 		<tr id="el-msqrt">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mroot">`msqrt`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -426,12 +464,13 @@
 		    <span class="role">AXRole: <code>NSAccessibilityGroupRole</code></span><br />
 		    <span class="subrole">AXSubrole: <code>AXMathSquareRoot</code></span><br />
 		    <span class="attrs">AXAttributes:
-		      <code>AXMathRootRadicand</code> pointing to the first in-flow child
+		      <code>AXMathRootRadicand</code> is an array containing the in-flow children
 		    </span>
 		  </td>
 		</tr>
 		<tr id="el-mstyle">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mstyle">`mstyle`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -445,6 +484,7 @@
 		</tr>
 		<tr id="el-msub">
 		  <th><a data-cite="MathML3/chapter3.html#presm.msub">`msub`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -463,6 +503,7 @@
 		</tr>
 		<tr id="el-msubsup">
 		  <th><a data-cite="MathML3/chapter3.html#presm.msubsup">`msubsup`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -482,6 +523,7 @@
 		</tr>
 		<tr id="el-msup">
 		  <th><a data-cite="MathML3/chapter3.html#presm.msup">`msup`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -499,6 +541,7 @@
 		</tr>
 		<tr id="el-mtable">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mtable">`mtable`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -513,6 +556,7 @@
 		</tr>
 		<tr id="el-mtd">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mtd">`mtd`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -527,6 +571,7 @@
 		</tr>
 		<tr id="el-mtext">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mtext">`mtext`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -540,6 +585,7 @@
 		</tr>
 		<tr id="el-mtr">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mtr">`mtr`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -553,6 +599,7 @@
 		</tr>
 		<tr id="el-munder">
 		  <th><a data-cite="MathML3/chapter3.html#presm.munder">`munder`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -570,6 +617,7 @@
 		</tr>
 		<tr id="el-munderover">
 		  <th><a data-cite="MathML3/chapter3.html#presm.munderover">`munderover`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -588,6 +636,7 @@
 		</tr>
 		<tr id="el-none">
 		  <th><a data-cite="MathML3/chapter3.html#presm.mmultiscripts">`none`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
@@ -601,6 +650,7 @@
 		</tr>
 		<tr id="el-semantics">
 		  <th><a data-cite="MathML3/chapter3.html#presm.semantics">`semantics`</a></th>
+		  <td class="aria">No corresponding role</td>
 		  <td class="ia2">TBD</td>
 		  <td class="uia">TBD</td>
 		  <td class="atk">
