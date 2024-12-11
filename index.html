@@ -1,6 +1,6 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
-<meta name="generator" content="ReSpec 35.1.0">
+<meta name="generator" content="ReSpec 35.2.0">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <style>
 dfn{cursor:pointer}
@@ -25,6 +25,7 @@ dfn{cursor:pointer}
     
     
 <title>MathML Accessibility API Mappings 1.0</title>
+    
     
     
     
@@ -147,6 +148,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "REC": "https://www.w3.org/TR/wai-aria-implementation/"
   },
   "preProcess": [
+    null,
     null
   ],
   "postProcess": [],
@@ -158,8 +160,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     "wai-aria",
     "infra"
   ],
-  "publishISODate": "2024-06-15T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 15 June 2024"
+  "publishISODate": "2024-12-11T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 11 December 2024"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED"></head>
 
@@ -167,7 +169,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">MathML Accessibility API Mappings 1.0</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-06-15">15 June 2024</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-12-11">11 December 2024</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -228,16 +230,16 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </div>
     <section id="abstract" class="introductory"><h2>Abstract</h2>
       <p>
-        The MathML Accessibility <abbr title="application programming interface">API</abbr> Mappings (MathML-AAM) specification defines how <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> map Mathematical Markup Language (MathML) [<cite><a class="bibref" data-link-type="biblio" href="#bib-mathml3" title="Mathematical Markup Language (MathML) Version 3.0 2nd Edition">MathML3</a></cite>] to platform <a data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility APIs</a>. It
+        The MathML Accessibility <abbr title="application programming interface">API</abbr> Mappings (MathML-AAM) specification defines how <a data-link-type="dfn" href="https://infra.spec.whatwg.org/#user-agent">user agents</a> map Mathematical Markup Language (MathML) [<cite><a class="bibref" data-link-type="biblio" href="#bib-mathml3" title="Mathematical Markup Language (MathML) Version 3.0 2nd Edition">MathML3</a></cite>] to platform <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility APIs</a>. It
         extends the Core Accessibility <abbr title="application programming interface">API</abbr> Mappings (CORE-AAM) specification [<cite><a class="bibref" data-link-type="biblio" href="#bib-core-aam-1.2" title="Core Accessibility API Mappings 1.2">CORE-AAM-1.2</a></cite>].
       </p>
       <p>
         This specification is intended for user agent developers responsible for MathML accessibility in their product. The goal of this specification is to maximize the accessibility of MathML
-        content by ensuring each <a data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-assistive-technologies">assistive technology</a> receives MathML content with the <a data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-role">roles</a>, <a data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-state">states</a>, and <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-property">properties</a> it expects.
+        content by ensuring each <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-assistive-technologies">assistive technology</a> receives MathML content with the <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-role">roles</a>, <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-state">states</a>, and <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-property">properties</a> it expects.
       </p>
       <p>
         At the present time, this specification contains mappings for the subset of MathML contained in the MathML Core specification [<cite><a class="bibref" data-link-type="biblio" href="#bib-mathml-core" title="MathML Core">MathML-Core</a></cite>]. The reason why is that this subset contains the
-        <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">elements</a> and <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://dom.spec.whatwg.org/#concept-attribute">attributes</a> from MathML which are exposed to <a data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-assistive-technologies">assistive technologies</a> via platform <a data-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility APIs</a>.
+        <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-element">elements</a> and <a data-link-type="dfn" href="https://dom.spec.whatwg.org/#concept-attribute">attributes</a> from MathML which are exposed to <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-assistive-technologies">assistive technologies</a> via platform <a data-link-type="dfn" href="https://www.w3.org/TR/wai-aria/#dfn-accessibility-api">accessibility APIs</a>.
       </p>
       <p>
         The MathML-AAM is part of the <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> suite described in the <a href="http://www.w3.org/WAI/intro/aria.php"><abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> Overview</a>.
@@ -266,7 +268,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     
         This document was produced by a group
         operating under the
-        <a href="https://www.w3.org/Consortium/Patent-Policy/"><abbr title="World Wide Web Consortium">W3C</abbr> Patent
+        <a href="https://www.w3.org/policies/patent-policy/"><abbr title="World Wide Web Consortium">W3C</abbr> Patent
           Policy</a>.
       
     
@@ -276,14 +278,14 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
           the group; that page also includes
           instructions for disclosing a patent. An individual who has actual
           knowledge of a patent which the individual believes contains
-          <a href="https://www.w3.org/Consortium/Patent-Policy/#def-essential">Essential Claim(s)</a>
+          <a href="https://www.w3.org/policies/patent-policy/#def-essential">Essential Claim(s)</a>
           must disclose the information in accordance with
-          <a href="https://www.w3.org/Consortium/Patent-Policy/#sec-Disclosure">section 6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
+          <a href="https://www.w3.org/policies/patent-policy/#sec-Disclosure">section 6 of the <abbr title="World Wide Web Consortium">W3C</abbr> Patent Policy</a>.
         
   </p><p>
                       This document is governed by the
-                      <a id="w3c_process_revision" href="https://www.w3.org/2023/Process-20231103/">03 November 2023 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
-                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#deprecated"><bdi class="secno">2.1 </bdi>Deprecated</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping-mathml-to-accessibility-apis"><bdi class="secno">3. </bdi>Mapping MathML to Accessibility APIs</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_general"><bdi class="secno">3.1 </bdi>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a></li><li class="tocline"><a class="tocxref" href="#mapping_conflicts"><bdi class="secno">3.2 </bdi>Conflicts between native semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a class="tocxref" href="#mapping_nodirect"><bdi class="secno">3.3 </bdi>Exposing features that do not directly map to accessibility <abbr title="application programming interface">API</abbr></a></li><li class="tocline"><a class="tocxref" href="#mathml-element-mappings"><bdi class="secno">3.4 </bdi>MathML Element Mappings</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#el-annotation"><bdi class="secno">3.4.1 </bdi><code>annotation</code></a></li><li class="tocline"><a class="tocxref" href="#el-annotation-xml"><bdi class="secno">3.4.2 </bdi><code>annotation-xml</code></a></li><li class="tocline"><a class="tocxref" href="#el-maction"><bdi class="secno">3.4.3 </bdi><code>maction</code></a></li><li class="tocline"><a class="tocxref" href="#el-math"><bdi class="secno">3.4.4 </bdi><code>math</code></a></li><li class="tocline"><a class="tocxref" href="#el-merror"><bdi class="secno">3.4.5 </bdi><code>merror</code></a></li><li class="tocline"><a class="tocxref" href="#el-mfrac"><bdi class="secno">3.4.6 </bdi><code>mfrac</code></a></li><li class="tocline"><a class="tocxref" href="#el-mi"><bdi class="secno">3.4.7 </bdi><code>mi</code></a></li><li class="tocline"><a class="tocxref" href="#el-mmultiscripts"><bdi class="secno">3.4.8 </bdi><code>mmultiscripts</code></a></li><li class="tocline"><a class="tocxref" href="#el-mn"><bdi class="secno">3.4.9 </bdi><code>mn</code></a></li><li class="tocline"><a class="tocxref" href="#el-mo"><bdi class="secno">3.4.10 </bdi><code>mo</code></a></li><li class="tocline"><a class="tocxref" href="#el-mover"><bdi class="secno">3.4.11 </bdi><code>mover</code></a></li><li class="tocline"><a class="tocxref" href="#el-mpadded"><bdi class="secno">3.4.12 </bdi><code>mpadded</code></a></li><li class="tocline"><a class="tocxref" href="#el-phantom"><bdi class="secno">3.4.13 </bdi><code>mphantom</code></a></li><li class="tocline"><a class="tocxref" href="#el-mprescripts"><bdi class="secno">3.4.14 </bdi><code>mprescripts</code></a></li><li class="tocline"><a class="tocxref" href="#el-mroot"><bdi class="secno">3.4.15 </bdi><code>mroot</code></a></li><li class="tocline"><a class="tocxref" href="#el-mrow"><bdi class="secno">3.4.16 </bdi><code>mrow</code></a></li><li class="tocline"><a class="tocxref" href="#el-ms"><bdi class="secno">3.4.17 </bdi><code>ms</code></a></li><li class="tocline"><a class="tocxref" href="#el-mspace"><bdi class="secno">3.4.18 </bdi><code>mspace</code></a></li><li class="tocline"><a class="tocxref" href="#el-msqrt"><bdi class="secno">3.4.19 </bdi><code>msqrt</code></a></li><li class="tocline"><a class="tocxref" href="#el-mstyle"><bdi class="secno">3.4.20 </bdi><code>mstyle</code></a></li><li class="tocline"><a class="tocxref" href="#el-msub"><bdi class="secno">3.4.21 </bdi><code>msub</code></a></li><li class="tocline"><a class="tocxref" href="#el-msubsup"><bdi class="secno">3.4.22 </bdi><code>msubsup</code></a></li><li class="tocline"><a class="tocxref" href="#el-msup"><bdi class="secno">3.4.23 </bdi><code>msup</code></a></li><li class="tocline"><a class="tocxref" href="#el-mtable"><bdi class="secno">3.4.24 </bdi><code>mtable</code></a></li><li class="tocline"><a class="tocxref" href="#el-mtd"><bdi class="secno">3.4.25 </bdi><code>mtd</code></a></li><li class="tocline"><a class="tocxref" href="#el-mtext"><bdi class="secno">3.4.26 </bdi><code>mtext</code></a></li><li class="tocline"><a class="tocxref" href="#el-mtr"><bdi class="secno">3.4.27 </bdi><code>mtr</code></a></li><li class="tocline"><a class="tocxref" href="#el-munder"><bdi class="secno">3.4.28 </bdi><code>munder</code></a></li><li class="tocline"><a class="tocxref" href="#el-munderover"><bdi class="secno">3.4.29 </bdi><code>munderover</code></a></li><li class="tocline"><a class="tocxref" href="#el-none"><bdi class="secno">3.4.30 </bdi><code>none</code></a></li><li class="tocline"><a class="tocxref" href="#el-semantics"><bdi class="secno">3.4.31 </bdi><code>semantics</code></a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#changelog"><bdi class="secno">A. </bdi>Change Log</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-last-public-working-draft"><bdi class="secno">A.1 </bdi>Substantive changes since the last public working draft</a></li><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-creation-of-this-specification"><bdi class="secno">A.2 </bdi>Substantive changes since the creation of this specification</a></li></ol></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B. </bdi>Acknowledgments</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ack_group"><bdi class="secno">B.1 </bdi>Participants active in the ARIA WG at the time of publication</a></li><li class="tocline"><a class="tocxref" href="#ack_funders"><bdi class="secno">B.2 </bdi>Enabling funders</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">C.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">C.2 </bdi>Informative references</a></li></ol></li></ol></nav>
+                      <a id="w3c_process_revision" href="https://www.w3.org/policies/process/20231103/">03 November 2023 <abbr title="World Wide Web Consortium">W3C</abbr> Process Document</a>.
+                    </p></section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#abstract">Abstract</a></li><li class="tocline"><a class="tocxref" href="#sotd">Status of This Document</a></li><li class="tocline"><a class="tocxref" href="#introduction"><bdi class="secno">1. </bdi>Introduction</a></li><li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">2. </bdi>Conformance</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#deprecated"><bdi class="secno">2.1 </bdi>Deprecated</a></li></ol></li><li class="tocline"><a class="tocxref" href="#mapping-mathml-to-accessibility-apis"><bdi class="secno">3. </bdi>Mapping MathML to Accessibility APIs</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#mapping_general"><bdi class="secno">3.1 </bdi>General rules for exposing <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr> semantics</a></li><li class="tocline"><a class="tocxref" href="#mapping_conflicts"><bdi class="secno">3.2 </bdi>Conflicts between native semantics and <abbr title="Accessible Rich Internet Application">WAI-ARIA</abbr></a></li><li class="tocline"><a class="tocxref" href="#mapping_nodirect"><bdi class="secno">3.3 </bdi>Exposing features that do not directly map to accessibility <abbr title="application programming interface">API</abbr></a></li><li class="tocline"><a class="tocxref" href="#mathml-element-mappings"><bdi class="secno">3.4 </bdi>MathML Element Mappings</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#el-annotation"><bdi class="secno">3.4.1 </bdi><code>annotation</code></a></li><li class="tocline"><a class="tocxref" href="#el-annotation-xml"><bdi class="secno">3.4.2 </bdi><code>annotation-xml</code></a></li><li class="tocline"><a class="tocxref" href="#el-maction"><bdi class="secno">3.4.3 </bdi><code>maction</code></a></li><li class="tocline"><a class="tocxref" href="#el-math"><bdi class="secno">3.4.4 </bdi><code>math</code></a></li><li class="tocline"><a class="tocxref" href="#el-merror"><bdi class="secno">3.4.5 </bdi><code>merror</code></a></li><li class="tocline"><a class="tocxref" href="#el-mfrac"><bdi class="secno">3.4.6 </bdi><code>mfrac</code></a></li><li class="tocline"><a class="tocxref" href="#el-mi"><bdi class="secno">3.4.7 </bdi><code>mi</code></a></li><li class="tocline"><a class="tocxref" href="#el-mmultiscripts"><bdi class="secno">3.4.8 </bdi><code>mmultiscripts</code></a></li><li class="tocline"><a class="tocxref" href="#el-mn"><bdi class="secno">3.4.9 </bdi><code>mn</code></a></li><li class="tocline"><a class="tocxref" href="#el-mo"><bdi class="secno">3.4.10 </bdi><code>mo</code></a></li><li class="tocline"><a class="tocxref" href="#el-mover"><bdi class="secno">3.4.11 </bdi><code>mover</code></a></li><li class="tocline"><a class="tocxref" href="#el-mpadded"><bdi class="secno">3.4.12 </bdi><code>mpadded</code></a></li><li class="tocline"><a class="tocxref" href="#el-phantom"><bdi class="secno">3.4.13 </bdi><code>mphantom</code></a></li><li class="tocline"><a class="tocxref" href="#el-mprescripts"><bdi class="secno">3.4.14 </bdi><code>mprescripts</code></a></li><li class="tocline"><a class="tocxref" href="#el-mroot"><bdi class="secno">3.4.15 </bdi><code>mroot</code></a></li><li class="tocline"><a class="tocxref" href="#el-mrow"><bdi class="secno">3.4.16 </bdi><code>mrow</code></a></li><li class="tocline"><a class="tocxref" href="#el-ms"><bdi class="secno">3.4.17 </bdi><code>ms</code></a></li><li class="tocline"><a class="tocxref" href="#el-mspace"><bdi class="secno">3.4.18 </bdi><code>mspace</code></a></li><li class="tocline"><a class="tocxref" href="#el-msqrt"><bdi class="secno">3.4.19 </bdi><code>msqrt</code></a></li><li class="tocline"><a class="tocxref" href="#el-mstyle"><bdi class="secno">3.4.20 </bdi><code>mstyle</code></a></li><li class="tocline"><a class="tocxref" href="#el-msub"><bdi class="secno">3.4.21 </bdi><code>msub</code></a></li><li class="tocline"><a class="tocxref" href="#el-msubsup"><bdi class="secno">3.4.22 </bdi><code>msubsup</code></a></li><li class="tocline"><a class="tocxref" href="#el-msup"><bdi class="secno">3.4.23 </bdi><code>msup</code></a></li><li class="tocline"><a class="tocxref" href="#el-mtable"><bdi class="secno">3.4.24 </bdi><code>mtable</code></a></li><li class="tocline"><a class="tocxref" href="#el-mtd"><bdi class="secno">3.4.25 </bdi><code>mtd</code></a></li><li class="tocline"><a class="tocxref" href="#el-mtext"><bdi class="secno">3.4.26 </bdi><code>mtext</code></a></li><li class="tocline"><a class="tocxref" href="#el-mtr"><bdi class="secno">3.4.27 </bdi><code>mtr</code></a></li><li class="tocline"><a class="tocxref" href="#el-munder"><bdi class="secno">3.4.28 </bdi><code>munder</code></a></li><li class="tocline"><a class="tocxref" href="#el-munderover"><bdi class="secno">3.4.29 </bdi><code>munderover</code></a></li><li class="tocline"><a class="tocxref" href="#el-none"><bdi class="secno">3.4.30 </bdi><code>none</code></a></li><li class="tocline"><a class="tocxref" href="#el-semantics"><bdi class="secno">3.4.31 </bdi><code>semantics</code></a></li></ol></li></ol></li><li class="tocline"><a class="tocxref" href="#changelog"><bdi class="secno">A. </bdi>Change Log</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-last-public-working-draft"><bdi class="secno">A.1 </bdi>Substantive changes since the last public working draft</a></li><li class="tocline"><a class="tocxref" href="#substantive-changes-since-the-creation-of-this-specification"><bdi class="secno">A.2 </bdi>Substantive changes since the creation of this specification</a></li></ol></li><li class="tocline"><a class="tocxref" href="#acknowledgements"><bdi class="secno">B. </bdi>Acknowledgments</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#ack_group"><bdi class="secno">B.1 </bdi>ARIA WG participants at the time of publication</a></li><li class="tocline"><a class="tocxref" href="#ack_funders"><bdi class="secno">B.2 </bdi>Enabling funders</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">C. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">C.1 </bdi>Normative references</a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">C.2 </bdi>Informative references</a></li></ol></li></ol></nav>
 
     <section id="introduction"><div class="header-wrapper"><h2 id="x1-introduction"><bdi class="secno">1. </bdi>Introduction</h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div>
       
@@ -1538,105 +1540,13 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <section class="appendix informative section" id="acknowledgements"><div class="header-wrapper"><h2 id="b-acknowledgments"><bdi class="secno">B. </bdi>Acknowledgments</h2><a class="self-link" href="#acknowledgements" aria-label="Permalink for Appendix B."></a></div><p><em>This section is non-normative.</em></p>
       
       <p>The following people contributed to the development of this document.</p>
-      <section class="section" id="ack_group"><div class="header-wrapper"><h3 id="b-1-participants-active-in-the-aria-wg-at-the-time-of-publication"><bdi class="secno">B.1 </bdi>Participants active in the ARIA WG at the time of publication</h3><a class="self-link" href="#ack_group" aria-label="Permalink for Appendix B.1"></a></div>
-	
-	<ul>
-		<li>Irfan Ali (Educational Testing Service)</li>
-		<li>CB Averitt (Deque Systems, Inc)</li>
-		<li>Sina Bahram (Invited Expert)</li>
-		<li>Shirisha Balusani (Invited Expert)</li>
-		<li>Amelia Bellamy-Royds (Invited Expert)</li>
-		<li>Curt Bellew (Oracle Corporation)</li>
-		<li>Alex Bernier (Association BrailleNet)</li>
-		<li>Zoë Bijl (Invited Expert)</li>
-		<li>Jorge Blazquez Alonso (IBM Corporation)</li>
-		<li>Alice Boxhall (Google LLC)</li>
-		<li>Matthew Brennan (Facebook)</li>
-		<li>Kim Bunge (TPGi)</li>
-		<li>Shari Butler (Pearson plc)</li>
-		<li>Tammy Campoverde (UnitedHealth Group)</li>
-		<li>David Caro (Wikimedia Foundation)</li>
-		<li>Timothy Cole (University of Illinois at Urbana-Champaign)</li>
-		<li>Dominic Cooney (Facebook)</li>
-		<li>Michael Cooper (<abbr title="World Wide Web Consortium">W3C</abbr> Staff)</li>
-		<li>James Craig (Apple Inc.) </li>
-		<li>Jory Cunningham (Salesforce)</li>
-		<li>Jes Daigle (Bocoup)</li>
-		<li>Joanmarie Diggs (Igalia)</li>
-		<li>Jason Duan (IBM Corporation)</li>
-		<li>Isaac Durazo (Bocoup)</li>
-		<li>Howard Edwards (Bocoup)</li>
-		<li>Steve Faulkner (TPGi) </li>
-        <li>Reinaldo Ferraz (NIC.br)</li>
-		<li>Alexander Flenniken (Bocoup)</li>
-		<li>Bryan Garaventa (Level Access)</li>
-		<li>Matt Garrish (DAISY Consortium)</li>
-		<li>Jaunita George (Navy Federal Credit Union)</li>
-		<li>Raghavendra Giriyappa (IBM Corporation)</li>
-		<li>Michael Goddard (Bocoup)</li>
-		<li>Glen Gordon (TPGi)</li>
-		<li>Jon Gunderson (University of Illinois at Urbana-Champaign)</li>
-		<li>Markku Hakkinen (Educational Testing Service)</li>
-		<li>Sarah Higley (Microsoft Corporation)</li>
-		<li>Hans Hillen (TPGi)</li>
-		<li>Isabel Holdsworth (TPGi)</li>
-		<li>Stanley Hon (Microsoft Corporation)</li>
-		<li>Nicholas Hoyt (University of Illinois at Urbana-Champaign)</li>
-		<li>Shilpi Kapoor (BarrierBreak Technologies)</li>
-		<li>Matthew King (Facebook)</li>
-		<li>Greta Krafsig (The Washington Post)</li>
-		<li>Peter Krautzberger (Invited Expert)</li>
-		<li>JaEun Jemma Ku (University of Illinois at Urbana-Champaign)</li>
-		<li>Lori Lane (University of Illinois at Urbana-Champaign)</li>
-		<li>Charles LaPierre (Benetech)</li>
-		<li>Gez Lemon (TPGi)</li>
-		<li>Aaron Leventhal (Google LLC)</li>
-		<li>Brian Liu Xu (Microsoft Corporation)</li>
-		<li>David MacDonald (Invited Expert)</li>
-		<li>Carolyn MacLeod (IBM Corporation)</li>
-		<li>Daniel Marques (WIRIS Science)</li>
-		<li>Dominic Mazzoni (Google LLC)</li>
-		<li>Mark McCarthy (University of Illinois at Urbana-Champaign)</li>
-		<li>Jan McSorley (Pearson plc)</li>
-		<li>Erika Miguel (Bocoup)</li>
-		<li>Sheila Moussavi (Bocoup)</li>
-		<li>Rich Noah (Bocoup)</li>
-		<li>James Nurthen (Adobe) </li>
-		<li>Scott O'Hara (Microsoft Corporation)</li>
-		<li>Achraf Othman (MADA Center)</li>
-		<li>Vijaya Gowri Perumal (Newgen Knowledgeworks)</li>
-		<li>Christos Petrou (Centre for Inclusive Design)</li>
-		<li>Simon Pieters (Bocoup)</li>
-		<li>Ian Pouncey (TetraLogical Services Ltd)</li>
-		<li>Ruoxi Ran (<abbr title="World Wide Web Consortium">W3C</abbr> Staff)</li>
-		<li>Adrian Roselli (TPGi)</li>
-		<li>Janina Sajka (Invited Expert, The Linux Foundation)</li>
-		<li>Stefan Schnabel (SAP SE) </li>
-		<li>Harris Schneiderman (Deque Systems, Inc.)</li>
-		<li>Lisa Seeman-Kestenbaum (Invited Expert) </li>
-		<li>Boaz Sender (Bocoup)</li>
-		<li>Cynthia Shelly (Google LLC)</li>
-		<li>Tzviya Siegman (Wiley)</li>
-		<li>Sharon Snider (IBM Corporation)</li>
-		<li>Neil Soiffer (Invited Expert)</li>
-		<li>Volker Sorge (Invited Expert)</li>
-		<li>Francis Storr (Intel Corporation)</li>
-		<li>Melanie Sumner (Invited Expert)</li>
-		<li>Alexander Surkov (Igalia)</li>
-		<li>William Tennis (Navy Federal Credit Union)</li>
-		<li>Seth Thompson (Bocoup)</li>
-		<li>Scott Vinkle (Shopify)</li>
-		<li>Can Wang (Zhejiang University)</li>
-		<li>Wei Wang (Zhejiang University)</li>
-		<li>Léonie Watson (TetraLogical Services Ltd)</li>
-		<li>Jason White (Educational Testing Service)</li>
-		<li>Jan Williams (TPGi)</li>
-		<li>Evan Yamanishi (W. W. Norton)</li>
-		<li>Benjamin Young (Wiley)</li>
-		<li>Valerie Young (Bocoup)</li>
-		<li>Marco Zehe (Mozilla Foundation)</li>
-	</ul>
-</section>
+      <ul id="gh-contributors"><li><a href="https://github.com/asurkov">Alexander Surkov</a></li><li><a href="https://github.com/carmacleod">Carolyn MacLeod</a></li><li><a href="https://github.com/fred-wang">Frédéric Wang</a></li><li><a href="https://github.com/joanmarie">joanmarie</a></li><li><a href="https://github.com/pkra">Peter Krautzberger</a></li><li><a href="https://github.com/spectranaut">Valerie Young</a></li></ul>
+      <section class="section" id="ack_group"><div class="header-wrapper"><h3 id="b-1-aria-wg-participants-at-the-time-of-publication"><bdi class="secno">B.1 </bdi>ARIA WG participants at the time of publication</h3><a class="self-link" href="#ack_group" aria-label="Permalink for Appendix B.1"></a></div>
+        
+        <ul>
+          
+        <li>Rahim Abdi (Apple Inc.)</li><li>Sina Bahram (Prime Access Consulting, Inc.)</li><li>Mario Batušić (Fabasoft)</li><li>Benjamin Beaudry (Microsoft Corporation)</li><li>Curt Bellew (Oracle Corporation)</li><li>Zoë Bijl (W3C Invited Experts)</li><li>Jieting Chen (Tencent)</li><li>Aleksandar Cindrikj (Netcetera)</li><li>Keith Cirkel (Microsoft Corporation)</li><li>Daniel Clark (Microsoft Corporation)</li><li>Dominic Cooney (Meta)</li><li>James Craig (Apple Inc.)</li><li>Chris Cuellar (Bocoup)</li><li>Hidde de Vries (Logius)</li><li>Airing Deng (Tencent)</li><li>Joanmarie Diggs (Igalia)</li><li>Howard Edwards (Bocoup)</li><li>James Edwards (TPGi)</li><li>Mayuri Faldu (Navy Federal Credit Union)</li><li>Betsy Fanning (PDF Association)</li><li>Reinaldo Ferraz (NIC.br - Brazilian Network Information Center)</li><li>Jane Fulton (Cisco)</li><li>Bryan Garaventa (W3C Invited Experts)</li><li>Rashmi Garimella (Google LLC)</li><li>Matt Garrish (DAISY Consortium)</li><li>Doug Geoffray (Microsoft Corporation)</li><li>Jaunita George (Navy Federal Credit Union)</li><li>Ariella Gilmore (IBM Corporation)</li><li>Glen Gordon (TPGi)</li><li>Shirisha Gubba (Google LLC)</li><li>Eloisa Guerrero (Rakuten Group, Inc.)</li><li>Jon Gunderson (University of Illinois)</li><li>Oliver Habersetzer (SAP SE)</li><li>Theo Hale (Microsoft Corporation)</li><li>Sunny Hardasani (Adobe)</li><li>Matthew Hardy (Adobe)</li><li>Peter Heumader (Fabasoft)</li><li>Sarah Higley (Microsoft Corporation)</li><li>Hans Hillen (TPGi)</li><li>Isabel Holdsworth (TPGi)</li><li>Stanley Hon (Microsoft Corporation)</li><li>Jeroen Hulscher (Logius)</li><li>Michael Jackson (Microsoft Corporation)</li><li>Duff Johnson (PDF Association)</li><li>Summer Jones (Thomson Reuters Corp.)</li><li>Cory Joseph (CVS Pharmacy, Inc.)</li><li>Sanket Joshi (Microsoft Corporation)</li><li>William Kilian (TargetStream Technologies)</li><li>Matthew King (Meta)</li><li>Zachary Kinsey (TargetStream Technologies)</li><li>Greta Krafsig (The Washington Post)</li><li>Peter Krautzberger (krautzource UG)</li><li>Nina Krauß (SAP SE)</li><li>JaEun Jemma Ku (University of Illinois)</li><li>Charles LaPierre (Benetech)</li><li>Philip Lazarevic (Level Access)</li><li>Aaron Leventhal (Google LLC)</li><li>Brett Lewis (TPGi)</li><li>biao liu (Shenzhen Accessibility Research Association)</li><li>Sazzad Mahamud (Google LLC)</li><li>Alison Maher (Microsoft Corporation)</li><li>Mark McCarthy (University of Illinois)</li><li>Clay Miller (Microsoft Corporation)</li><li>Daniel Montalvo (W3C)</li><li>Shikha Nikhil Dwivedi (Centre for Inclusive Design)</li><li>James Nurthen (Adobe)</li><li>Scott O'Hara (Microsoft Corporation)</li><li>Lola Odelola (W3C Invited Experts)</li><li>Adam Page (Hilton)</li><li>Michael Pennisi (Bocoup)</li><li>Roberto Perez (Microsoft Corporation)</li><li>Giacomo Petri (UsableNet)</li><li>Daniel Pöll (Fabasoft)</li><li>Paul Rayius (Allyant)</li><li>Adrian Roselli (W3C Invited Experts)</li><li>Marco Sabidussi (UsableNet)</li><li>Janina Sajka (W3C Invited Experts)</li><li>Trisha Salas (Level Access)</li><li>Stefan Schnabel (SAP SE)</li><li>Harris Schneiderman (Deque Systems, Inc.)</li><li>Raymond Schwartz (Navy Federal Credit Union)</li><li>Cynthia Shelly (Google LLC)</li><li>Avneesh Singh (DAISY Consortium)</li><li>Michael[tm] Smith (sideshowbarker) (W3C)</li><li>Neil Soiffer (W3C Invited Experts)</li><li>Francis Storr (Intel Corporation)</li><li>Melanie Sumner (W3C Invited Experts)</li><li>Alexander Surkov (Igalia)</li><li>James Teh (Mozilla Foundation)</li><li>Roman Toda (Foxit software)</li><li>Jocelyn Tran (Google LLC)</li><li>Jan Williams (TPGi)</li><li>Peter Wyatt (PDF Association)</li><li>Michail Yasonik (Airbnb Inc)</li><li>Valerie Young (Igalia)</li><li>Kate Zhao (Thomson Reuters Corp.)</li><li>Xiao (Helen) Zhou (University of Illinois)</li><li>Filippo Zorzi (UsableNet)</li><li>骅 杨 (Shenzhen Accessibility Research Association)</li></ul>
+      </section>
 
       <section class="section" id="ack_funders"><div class="header-wrapper"><h3 id="b-2-enabling-funders"><bdi class="secno">B.2 </bdi>Enabling funders</h3><a class="self-link" href="#ack_funders" aria-label="Permalink for Appendix B.2"></a></div>
 	
@@ -1649,9 +1559,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 <section id="references" class="appendix"><div class="header-wrapper"><h2 id="c-references"><bdi class="secno">C. </bdi>References</h2><a class="self-link" href="#references" aria-label="Permalink for Appendix C."></a></div><section id="normative-references"><div class="header-wrapper"><h3 id="c-1-normative-references"><bdi class="secno">C.1 </bdi>Normative references</h3><a class="self-link" href="#normative-references" aria-label="Permalink for Appendix C.1"></a></div>
     
     <dl class="bibliography"><dt id="bib-core-aam-1.2">[CORE-AAM-1.2]</dt><dd>
-      <a href="https://www.w3.org/TR/core-aam-1.2/"><cite>Core Accessibility API Mappings 1.2</cite></a>. Valerie Young; Alexander Surkov; Michael Cooper.  W3C. 2 November 2023. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/core-aam-1.2/">https://www.w3.org/TR/core-aam-1.2/</a>
+      <a href="https://www.w3.org/TR/core-aam-1.2/"><cite>Core Accessibility API Mappings 1.2</cite></a>. Valerie Young; Alexander Surkov.  W3C. 22 November 2024. W3C Candidate Recommendation. URL: <a href="https://www.w3.org/TR/core-aam-1.2/">https://www.w3.org/TR/core-aam-1.2/</a>
     </dd><dt id="bib-html">[html]</dt><dd>
-      <a href="https://html.spec.whatwg.org/multipage/"><cite>HTML Standard</cite></a>. Anne van Kesteren; Domenic Denicola; Ian Hickson; Philip Jägenstedt; Simon Pieters.  WHATWG. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
+      <a href="https://html.spec.whatwg.org/multipage/"><cite>HTML Standard</cite></a>. Anne van Kesteren; Domenic Denicola; Dominic Farolino; Ian Hickson; Philip Jägenstedt; Simon Pieters.  WHATWG. Living Standard. URL: <a href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>
     </dd><dt id="bib-mathml3">[MathML3]</dt><dd>
       <a href="https://www.w3.org/TR/MathML3/"><cite>Mathematical Markup Language (MathML) Version 3.0 2nd Edition</cite></a>. David Carlisle; Patrick D F Ion; Robert R Miner.  W3C. 10 April 2014. W3C Recommendation. URL: <a href="https://www.w3.org/TR/MathML3/">https://www.w3.org/TR/MathML3/</a>
     </dd><dt id="bib-rfc2119">[RFC2119]</dt><dd>
